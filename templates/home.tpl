@@ -2,32 +2,24 @@
     <div class="col-lg-9 col-sm-12" no-widget-class="col-lg-12 col-sm-12" no-widget-target="sidebar">
         <div class="row">
             <!-- BEGIN categories -->
-            <div class="<!-- IF categories.class -->{categories.class}<!-- ELSE -->col-md-3 col-sm-6 col-xs-12<!-- ENDIF categories.class --> category-item" data-cid="{categories.cid}" data-numRecentReplies="{categories.cid}">
+            <div class="col-xs-12 category-item" data-cid="{categories.cid}" data-numRecentReplies="{categories.cid}">
                 <meta itemprop="name" content="{categories.name}">
 
-                <div class="category-icon">
-
-                    <a style="color: {categories.color};" href="{relative_path}/category/{categories.slug}" itemprop="url">
-
-                        <div id="category-{categories.cid}" class="category-header category-header-image-{categories.imageClass}" style="<!-- IF categories.backgroundImage -->background-image: url({categories.backgroundImage});<!-- ENDIF categories.backgroundImage --><!-- IF categories.bgColor -->background-color:{categories.bgColor});<!-- ENDIF categories.bgColor --> color: {categories.color};">
-
-                            <! IF !categories.link -->
-                            <span class="badge {categories.unread-class}"><i class="fa fa-book" data-toggle="tooltip" title="[[global:topics]]"></i> <span class="human-readable-number" title="{categories.topic_count}">{categories.topic_count}</span>&nbsp; <i class="fa fa-pencil" data-toggle="tooltip" title="[[global:posts]]"></i> <span class="human-readable-number" title="{categories.post_count}">{categories.post_count}</span></span>
-                            <!-- ENDIF !categories.link -->
-
-                            <!-- IF categories.icon -->
-                            <div><i class="fa {categories.icon} fa-4x"></i></div>
-                            <!-- ENDIF categories.icon -->
-                        </div>
-                    </a>
-
                     <div class="category-box">
+
+                        <div class="category-icon">
+                            <a href="{relative_path}/category/{categories.slug}" itemprop="url">
+                                <i class="fa <!-- IF categories.icon -->{categories.icon}<!-- ELSE -->fa-comment<!-- ENDIF categories.icon --> fa-4x fa-fw"></i>
+                            </a>
+                        </div>
+
                         <div class="category-info">
                             <a href="{relative_path}/category/{categories.slug}" itemprop="url">
                                 <h4><!-- IF categories.icon --><i class="fa {categories.icon} visible-xs-inline"></i> <!-- ENDIF categories.icon -->{categories.name}</h4>
                             </a>
                             <div class="description" itemprop="description">{categories.description}</div>
                             <!-- IF !categories.link -->
+                            <span class="badge {categories.unread-class}"><i class="fa fa-book" data-toggle="tooltip" title="[[global:topics]]"></i> <span class="human-readable-number" title="{categories.topic_count}">{categories.topic_count}</span>&nbsp; <i class="fa fa-pencil" data-toggle="tooltip" title="[[global:posts]]"></i> <span class="human-readable-number" title="{categories.post_count}">{categories.post_count}</span></span>
                         </div>
 
                         <!-- BEGIN posts -->
@@ -50,7 +42,6 @@
                         <!-- ENDIF !categories.link -->
                     </div>
 
-                </div>
             </div>
             <!-- END categories -->
         </div>
