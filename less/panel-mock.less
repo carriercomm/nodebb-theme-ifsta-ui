@@ -1,0 +1,39 @@
+.navbar-panel-mock {
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0, #e8e8e8 100%);
+  background-image: linear-gradient(to bottom, #f5f5f5 0, #e8e8e8 100%);
+  background-repeat: repeat-x;
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+
+  .navbar-brand.forum-title {
+    color: @ifsta-red;
+    font-weight: 600;
+    font-family: R1;
+  }
+
+  .nav {
+    margin-left: 10px;
+    > li {
+      > a {
+        color: #333;
+        -webkit-transition: background-color 0.2s ease-in;
+        &:hover {
+          background-color: @ifsta-red;
+          color: #eee;
+        }
+      }
+    }
+  }
+}
+
+a {
+  color: @ifsta-red;
+  &:hover {
+    color: @ifsta-dark-red;
+  }
+}
+
+h4 {
+  font-family: R1;
+}

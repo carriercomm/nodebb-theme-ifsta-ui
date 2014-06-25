@@ -1,0 +1,8 @@
+{
+    "id": "nodebb-theme-ifsta-ui",
+    "name": "IFSTA UI Theme for NodeBB",
+    "description": "A simple theme for NodeBB, to be used on MyIfsta page forum.",
+    "url": "https://github.com/martin-williams/nodebb-theme-ifsta-ui",
+    "screenshot": null,
+    "templates": "templates"
+}
