@@ -20,26 +20,31 @@
                             <div class="description" itemprop="description">{categories.description}</div>
                             <!-- IF !categories.link -->
                             <span class="badge {categories.unread-class}"><i class="fa fa-book" data-toggle="tooltip" title="[[global:topics]]"></i> <span class="human-readable-number" title="{categories.topic_count}">{categories.topic_count}</span>&nbsp; <i class="fa fa-pencil" data-toggle="tooltip" title="[[global:posts]]"></i> <span class="human-readable-number" title="{categories.post_count}">{categories.post_count}</span></span>
+                            <!-- ENDIF !categories.link -->
                         </div>
 
-                        <!-- BEGIN posts -->
-                        <div class="post-preview clearfix">
-                            <div class="post-preview-content">
-                                <a style="color: {categories.color};" href="<!-- IF categories.posts.user.userslug -->{relative_path}/user/{categories.posts.user.userslug}<!-- ELSE -->#<!-- ENDIF categories.posts.user.userslug -->">
-                                    <img src="{categories.posts.user.picture}" title="{categories.posts.user.username}" class="pull-left user-img" />
-                                </a>
-                                <div class="content">
-                                    {categories.posts.content}
-                                    <p class="fade-out"></p>
+                        <div class="category-posts">
+
+                            <!-- BEGIN posts -->
+                            <div class="post-preview clearfix">
+                                <div class="post-preview-content">
+                                    <a style="color: {categories.color};" href="<!-- IF categories.posts.user.userslug -->{relative_path}/user/{categories.posts.user.userslug}<!-- ELSE -->#<!-- ENDIF categories.posts.user.userslug -->">
+                                        <img src="{categories.posts.user.picture}" title="{categories.posts.user.username}" class="pull-left user-img" />
+                                    </a>
+                                    <div class="content">
+                                        {categories.posts.content}
+                                        <p class="fade-out"></p>
+                                    </div>
                                 </div>
+                                <span class="pull-right footer">
+                                    <span class="timeago" title="{categories.posts.relativeTime}"></span> &bull;
+                                    <a href="{relative_path}/topic/{categories.posts.topic.slug}/{categories.posts.index}">[[global:read_more]]</a>
+                                </span>
                             </div>
-                            <span class="pull-right footer">
-                                <span class="timeago" title="{categories.posts.relativeTime}"></span> &bull;
-                                <a href="{relative_path}/topic/{categories.posts.topic.slug}/{categories.posts.index}">[[global:read_more]]</a>
-                            </span>
+                            <!-- END posts -->
+
                         </div>
-                        <!-- END posts -->
-                        <!-- ENDIF !categories.link -->
+
                     </div>
 
             </div>
