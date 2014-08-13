@@ -1,11 +1,11 @@
 {
   "name": "nodebb-theme-ifsta-ui",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "IFSTA theme for NodeBB",
   "main": "theme.less",
   "repository": {
     "type": "git",
-    "url": "https://github.com/martin-williams/nodebb-theme-ifsta-ui"
+    "url": "https://github.com/osufpp/nodebb-theme-ifsta-ui.git"
   },
   "keywords": [
     "nodebb",
@@ -14,14 +14,18 @@
     "bootstrap",
     "ifsta"
   ],
-  "author": "",
+    "author": {
+      "name": "Martin Williams",
+      "email": "martin.williams@beardon.com",
+      "url": "https://github.com/martin-williams"
+    },
   "bugs": {
-    "url": "https://github.com/martin-williams/nodebb-theme-ifsta-ui/issues"
+    "url": "https://github.com/osufpp/nodebb-theme-ifsta-ui.git/issues"
   },
   "readme": "nodebb-theme-ifsta-ui\r\n===================\r\n\r\nIFSTA theme for NodeBB based on Bootstrap.\r\n",
   "readmeFilename": "README.md",
-  "homepage": "https://github.com/martin-williams/nodebb-theme-ifsta-ui",
-  "_id": "nodebb-theme-ifsta-ui@0.1.1",
+  "homepage": "https://github.com/osufpp/nodebb-theme-ifsta-ui.git",
+  "_id": "nodebb-theme-ifsta-ui@0.1.2",
   "peerDependencies": {
     "nodebb-theme-vanilla": "~0.0.18"
   },
