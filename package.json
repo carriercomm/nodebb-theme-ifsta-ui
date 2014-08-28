@@ -20,7 +20,7 @@
       "url": "https://github.com/martin-williams"
     },
   "bugs": {
-    "url": "https://github.com/osufpp/nodebb-theme-ifsta-ui.git/issues"
+    "url": "https://github.com/osufpp/nodebb-theme-ifsta-ui/issues"
   },
   "readme": "nodebb-theme-ifsta-ui\r\n===================\r\n\r\nIFSTA theme for NodeBB based on Bootstrap.\r\n",
   "readmeFilename": "README.md",
